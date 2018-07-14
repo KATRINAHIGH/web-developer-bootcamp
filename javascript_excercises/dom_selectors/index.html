@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>DOM Selectors</title>
+   
+    </head>
+    <body>
+       <h1>DOM Selectors</h1>
+       <ul>
+           <li>DOM..need to remember that all of our elements live inside the document
+               object. Document object is the top level or root node.
+           </li>
+           <li>OPen up browser window and type the following in the console: document.URL;
+               document.head; document.body; document.links;
+           </li>
+           <li>All the selectors. All the methods we are going to learn live inside the 
+               document. Everything we will learn in this section will start with document.___something
+           </li>
+           <li>Methods, Five main methods will be learning. These five methods 
+               have all been add into the document object. Refer to catSpace and dogSpace
+                where we created an object with 2 different methods inside of it</li>
+           <ul>
+               <li>document.getElementById() <br>
+            Takes a string argument and returns the one element with a matching ID
+            When entering var tag = document.getElementById("highlight"); into the browser
+            console and then entering tag on the next line. The tag is returned to us
+            as text but it is actually an object. console.dir(tag) will return object</li>
+               <li>document.getElementsByClassName()<br>
+            Takes a string argument and returns a list of elements that have a 
+            matching class. Returns all elements with that class name. In our case it's 2
+            but it could be thousands. Technically, it doesn't return an array. It returns
+            a node list which is array like. It's a lightweight array. It comes with some of the 
+            features of an array but some of th advance things are missing. We can access
+            elements using index. We can do tags.length. But we can't do a foreach loop!! Behind
+            the scenes its actually an object.</li>
+               <li>document.getElementsByTagName<br>
+            Returns a list of all elements of a given tag name like li or h1 
+            Not limited to tags inside body. Could use body tag and will return list with 
+            one body tag inside of it. Could do it for head, html element, or title. 
+            Even if only one element will return it in a list</li>
+               <li>document.querySelector()<br>
+            Returns the first element that matches a given CSS-style selector. By CSS
+            stle selector we mean any of the selectors we can use inside a CSS document.
+            We can replicate all getElementBy selectors with querySelector. Can't write
+            the word "highlight" for the id like we did in getElementById. We must use the 
+            CSS syntax "#highlight". Will only return the first element we looking for. 
+            ".bolded" will only return the first element with that selector and not a list. Sometimes this
+            is useful. For instance, if used getElementByTag for body returns a list but querySelector
+            returns the object.<br>
+            Can get more specific. Can select anchor tag with a class special inside of an li</li>
+               <li>document.querySelectorall()<br>
+            Returns a list of elements that matches a given CSS-style selector. Can still
+            use if only one element you are looking for.</li>
+           </ul>
+       </ul>
+      
+       <script src="script.js" ></script>
+    </body>
+</html>

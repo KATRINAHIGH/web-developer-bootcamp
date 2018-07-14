@@ -1,0 +1,42 @@
+/*using simple system fonts*/
+/* Can use pixels (px) or (em) which is dynamic. an em is equal to the size
+of the font that applies to the parent of the element in question. If you
+haven't set the font size anywhere on the page then it is th browser default,
+which is probably 16px. So, by default 1 em = 16px and 2 em = 32 px. If you 
+set a font-size of 20px on hte body element, then 1 em = 20px and 2em = 40px.*/
+
+/*font-weight use bold or normal, some fonts allow range of 100, 200, 300...800*/
+/*line-height controls the height of a given line. Number will multiply current line-hieght 
+which is determined by the font itself*/
+/*text-align controls if to the left, right or center*/
+/*text decoration used to give an underline, overline or strike through effect*/
+p {
+    font-family: 'Lobster', cursive;
+    /*font-size: 40px;*/
+    font-size: 2.0em;
+    font-weight: bold;
+    line-height: 1.5;
+    text-decoration: underline;
+}
+
+h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 5.0em;
+    text-align: center;
+}
+
+span {
+    font-size: 2.0em; /*this will be double the size of the rest of the pixels in the paragraph cus nested*/
+}
+
+/*set font size on body in order to control base of em*/
+body {
+    font-size: 10px;
+}
+
+/*Google fonts https://fonts.google.com/*/
+/*Choose font and weights want to include. Be careful not to include 
+to many font wieghts cus it will slow the load of the page.
+Once selected font and wieghts a custom link is created that you use to 
+embed in the head of the html page and then use proper font name and weight
+in css. Google will also provide how to embed in css*/

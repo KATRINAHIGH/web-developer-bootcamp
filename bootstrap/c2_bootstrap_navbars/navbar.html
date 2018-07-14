@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+        <title>Bootstrap Navbar Basics</title> 
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    </head>
+    <body>
+        <!--Simpliest way to make a navbar. requires 2 classes navbar navbar-default-->
+        <!--Add brand to navbar by nesting a div with class navbar-header. Inside that put
+        an a tag so when click on it it will go back to the main page-->
+        <!--If want additional buttons in navbar nest another div but with class nav navbar-nav
+        for each item in this div need to add an li can put a tag in li. This is on the left side-->
+        <!--Second div uses classes nav navbar-nav navbar-right to items to the right on the navbar-->
+        <!--nav compenents default to 100 % width so in order to give it some padding and not
+        be butted up against the edge of the screen put everything inside the navabar inside a 
+        div with a container class-->
+        <!--In order to collapse links in navbar when hit mobile size and only show hamburger use
+         a div with class collapse navbar-collapse-->
+        <!--Adding in the hamburger is a lot of code inside button. Place inside the navbar-header
+        before the Koffee anchor tag. There's a button and inside is 3 spans and each is responsible
+        for making one of the bars-->
+        <!--In order to bind links into the dropdown of the hamburger data-target="" is important must use # to bind to id given to grouping you 
+        are binding.Add id="bs-nav-demo" to div wrapper added collapse to. This will bind it to the data-target"-->
+      <nav class="navbar navbar-default">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-nav-demo" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a href="#" class="navbar-brand">Koffee</a>
+            </div>
+
+            <div class="collapse navbar-collapse" id="bs-nav-demo">
+              <div class="nav navbar-nav">
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Portfolio</a></li>
+              </div>
+              <div class="nav navbar-nav navbar-right">
+                <li><a href="#">Sign up</a></li>
+                <li><a href="#">Login</a></li>      
+             </div>
+            </div>
+        </div>
+      </nav>
+
+        <!--Bootstrap default navbar-->
+        <!--At this point drop down menus and responsive hamburger don't work. Need to add
+        javascript cdn link to the html file-->
+
+        <nav class="navbar navbar-default">
+          <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#">Brand</a>
+            </div>
+              
+              <!-- Collect the nav links, forms, and other content for toggling -->
+             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                  <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
+                  <li><a href="#">Link</a></li>
+                  <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Another action</a></li>
+                        <li><a href="#">Something else here</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">Separated link</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">One more separated link</a></li>
+                      </ul>
+                  </li>
+                </ul>
+                <form class="navbar-form navbar-left">
+                  <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Search">
+                  </div>
+                    <button type="submit" class="btn btn-default">Submit</button>
+                </form>
+                <ul class="nav navbar-nav navbar-right">
+                  <li><a href="#">Link</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                          <li><a href="#">Action</a></li>
+                          <li><a href="#">Another action</a></li>
+                          <li><a href="#">Something else here</a></li>
+                          <li role="separator" class="divider"></li>
+                          <li><a href="#">Separated link</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </div><!-- /.navbar-collapse -->
+                </div><!-- /.container-fluid -->
+              </nav>
+      <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+              <!-- Latest compiled and minified JavaScript -->
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    </body>
+</html>

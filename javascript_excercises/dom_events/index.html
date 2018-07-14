@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>DOM Events</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+   
+    </head>
+    <body>
+        <h1>DOM Events makes things interactive. Code execute at a given point in time.
+            Not just at page load.
+        </h1>
+        <p>Events are everywhere</p>
+        <ul>
+            <li>Clicking on a button</li>
+            <li>hovering over a link</li>
+            <li>Dragging and dropping</li>
+            <li>pressing enter key</li>
+        </ul>
+        <p>The process<br>
+        We select an element and then add an event listener.<br>
+        We have to have an event that is being listened for on a given element</p>
+        <ul>
+            <li>Listen for a click on this button</li>
+            <li>Listen for a hover event on the h1</li>
+            <li>Listen for a keypress event on text input</li>
+        </ul>
+        <p>The Syntax<br>
+        To add a listener, we use a method called addEventListener<br>
+        We give 2 arguments: The first is the type of event we want to listen for.
+        The second is the code we want to run when that event happens</p>
+        <p>element.addEventListener(type, functionToCall);</p>
+        <p>var button = document.querySelector("button");
+            button.addEventListener("click", function(){
+                console.log("Someone clickked the button!")
+            });
+        </p>
+        <button>Add a listener to me</button>
+
+        <p>Another Example<br>
+        Let's display a message when a button is clicked</p>
+        <button id ="secondExample">Click Me</button>
+        <p id="pExample">No one has clicked Me yet</p>
+       
+        <p>Example Parent Element UL<br></p>
+            <ul id="parentExample">
+                <li>line one </li>
+                <li>line two</li>
+            </ul>
+
+        <p>We could also rewrite it using a named function instead of an anonymous function</p>
+        <button id ="namedFunction">Changes Paragraph</button>
+       <script src="script.js" ></script>
+    </body>
+</html>

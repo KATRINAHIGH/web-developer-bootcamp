@@ -1,0 +1,27 @@
+/*Divs are bloc level elements. Each has it's own line and they are stacked.*/
+/*Float allows us to take all divs it is applied to out of the normal flow of the document
+So instead of stacked they will float to the left*/
+
+/*After applying width to images. there is default whitespace between the pics. When 
+applied float removed that whitespace*/
+
+/*Created a 3 x 3 grid by giving each photo a width of 30%. To calculate the remaining
+margins remember each photo has it's own margin on both sides. So calculating 6 margins
+for a 3 x3 grid. so take 10% and divide by 6.*/
+
+img {
+    width: 30%;
+    float: left;
+    margin: 1.66%;
+}
+
+p { 
+    font-family: 'Raleway', sans-serif;
+    font-size: 23px;
+    font-weight: 800;
+    margin-left: 1.66%;
+    text-transform: uppercase;
+    border-bottom: 2px solid #f1f1f1;
+    width: 30%;
+    padding-bottom: 20px;
+}

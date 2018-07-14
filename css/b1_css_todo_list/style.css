@@ -1,0 +1,17 @@
+ul {
+color: lightcoral;
+}
+
+#special {
+    color: red;
+    background-color: lightgray;
+}
+
+.pickMe {
+    color: lightseagreen;
+    background-color:lightgoldenrodyellow;
+}
+
+#completed {
+    text-decoration: line-through;
+}

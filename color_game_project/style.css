@@ -1,0 +1,27 @@
+body {
+    background-color: #232323;
+}
+
+.square {
+    width: 30%;/*Each square takes up 30% of the container*/
+    background: purple;
+    padding-bottom: 30%; /*added some space cus divs are empty and nothing is showing*/
+    float: left; /*float to left will align the squares horizontally*/
+    margin: 1.66%; /*one big purple square until define margin, use 1.66% so adds up to 100% of container*/
+}
+
+#container {
+    margin: 0 auto; /*this will center the container auto sets sides to same as top and bottom of 0*/
+    max-width: 600px;/*reduce the size of the container*/
+}
+
+h1 {
+    color: white;
+}
+
+#stripe {
+    background-color: white;
+    height: 30px;
+    text-align: center;
+    color: black;
+}

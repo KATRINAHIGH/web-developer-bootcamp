@@ -1,0 +1,19 @@
+/*DEFINE A CLASS IN CSS*/
+.some-class {
+    color: blue;
+    border: 10px solid red;
+  }
+
+  /**classList
+  A read-only list that contains the classes for a given element. It is not an array */
+  /*DEFINE A CLASS IN CSS*/
+.another-class {
+    color: purple;
+    font-size: 76px;
+  }
+
+  .big {
+      font-size: 100px;
+      color: green;
+      border: 5px solid red;
+  }

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>DOM</title>
+   
+    </head>
+    <body>
+       <h1>DOM</h1>
+       <ul>
+           <li>Define what DOM is. Document Object Model. The document object Model
+               is the interface between your javascript and HTML+CSS. Javascript methods
+               and functions we can use to interact with our HTML and CSS.<br>
+               The browser turns every HTML tag into a javascript object that we can manipulate. 
+               Everything is stored inside of the document object.<br>
+               Type the following in the browser to see whats going on under the hood.
+               document //will just return html
+               console.dir(document); //will print out page in object syntax
+               object model part of DOM tells us that it's a  bunch of javascript objects that are 
+               modelling objects in our html. We have an a tag in our html. We end up with an object 
+               representing that a tag.
+               It's called the Document OM because everything lives inside one object called the document 
+
+           </li>
+           <li>Understand why DOM manipulation is awesome<br>
+            Games, Scrolling effects, dropdown menus, form validations, interactivity,
+            animations, every awesome site ever
+           </li>
+           <li>List a few examples of sites that use JS to manipulate the DOM</li>
+           <li>Understand the select then manipulate workflow</li>
+       </ul>
+       
+       <h1>Manipulating the DOM</h1>
+       <ul>
+           <li>Select an Element then manipulate</li>
+           <ul>
+               <li>Example we will change the color of an h1 tag using JS.
+                   Select the h1 tag and save it to a variable. querySelector returns
+                   an object that represents the h1 and saves it in a variable. Now that
+                   we have the element selected we can manipulate it. Next line start with
+                   element variable just named and manipulate the style which is a property
+                   with the nested property of color.
+               </li>
+               <li>Selection:   var h1 = document.querySelector("h1");</li>
+               <li>Manipulate:  h1.style.color = "pink";</li>
+           </ul>
+           <li>One More Example</li>
+           <ul>
+               <li>select the body and change it's color every second</li>
+               <li>Select:   var body = document.querySelector("body"); var isBlue = false;</li>
+               <li>Manipulate: 
+                   setInterval(function(){
+                if(isBlue){
+                    body.style.background = "white";
+                } else {
+                    body.style.background = "#3498db";
+                }
+                isBlue = !isBlue;
+            }, 1000);</li>
+            <li>SetInterval takes 2 arguments. The first is the code to run and the second 
+                is the time in milliseconds at which to run the code.
+            </li>
+           </ul>
+           <li>I had an uncaught type error that was resolved by loading the javascript at the bottom
+               of the page instead of the header.
+           </li>
+       </ul>
+       <script src="script.js" ></script>
+    </body>
+</html>

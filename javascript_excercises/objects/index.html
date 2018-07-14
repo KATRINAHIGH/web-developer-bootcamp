@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Objects</title>
+        <script src="script.js" ></script>
+    </head>
+    <body>
+       <h1>Objects</h1>
+       <ol>
+           <li>Stored in key value pairs. var person = {name: "Travis", age: 21, city: "LA"}</li>
+           <li>Unlike arrays, objects have no order</li>
+           <li>To retrieve data out of an object. Use object name followed either by brackets
+               or by dot notation and the key for the value you want to retrieve.
+                person["name"];  or person.name;
+           </li>
+           <li>There are 3 differences between the types of notation</li>
+                <ul>
+                    <li>You can not use dot notation if the property starts with a number.
+                    ex: someObject.1blah; //invalid someObject["1blah"]; //valid
+                    </li>
+                <li>You can look up using a variable with bracket notation.
+                    ex. var str = name; someObject.str; //doesn't look for name 
+                    someObject[str]; evaluates str and looks for name
+                </li>
+                <li>Can't use property names with spaces with dot notation>
+                    someObject.fav color //invalid someObject["fav color"]; //valid
+                </li>
+                </ul>
+            <li>Updating Data in an object. Just like an array we can access a property
+                and reassign it.<br>
+                var person= {name: "Travis", age: 21, city: "LA"};<br>
+                to update age: person["age"] += 1;<br>
+                to update city: person.city += "London";
+            </li>
+            <li>Creating Objects Like arrays there are a few methods of initializing objects</li>
+                <ul>
+                    <li>Make an empty object then add to it<br>
+                    var person = {}; person.name = "Travis"; person.age = 21; person.city = "LA";</li>
+                    <li>all at once Object Literal Notation<br>
+                    var person = { person: "Travis", age: 21, city: "LA"};</li>
+                    <li>another way of initializing an object<br>
+                    var person = new Object(); person.name = "Travis"; person.age = 21; person.city = "LA";</li>
+                </ul>
+            <li>Objects can hold all sorts of data..numbers, strings, arrays, boolean, even another object</li>
+            <li>Nested Arrays and Objects, can nest objects in arrays and arrays in Objects</li>
+       </ol>
+    </body>
+</html>

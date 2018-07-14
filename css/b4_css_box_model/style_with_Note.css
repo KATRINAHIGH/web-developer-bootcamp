@@ -1,0 +1,28 @@
+/*Content- Width and Height*/
+    /*default width of paragraph spans the width of the screen, give a new width if 
+    want smaller. We can use pixels or percentages. It's a percentage of the parent element
+    In this case the body.With % when change the window size the width will change in 
+    relation to that*/
+/*Border*/
+
+/*Padding is space between element and border. If we want more space between element
+and border then increase padding. Can do on just right, left, top, bottom...*/
+
+/*Margin is space outside of the border. Used to increase or decrease space between elements
+Can do shortcut and set each side using margin: top right bottom left
+Margin auto set the margin to auto on the left or right..this will center the margin for us*/
+
+/*Note when using chrome inspector: blue=content, green=padding, orange=margin, border=color set it to*/
+
+p {
+    width: 50%;
+    height: 50%;
+    border: 2px solid blue;
+    padding-left: 40px;
+    /*margin: 20px; 20px on all sides*/
+    /*margin-top: 20px; 20 pixel on top only*/
+    /*margin: 20px 40px 500px 30px; top right bottom left set individually*/
+    /*margin: 20px 40px; sets top and bottom to 20 and right left to 40*/
+    margin: auto 0 auto 0; /*centers right to left*/
+    /*margin: auto 0; set top and bottom to auto and left/right to 0 shortcut of above*/
+}

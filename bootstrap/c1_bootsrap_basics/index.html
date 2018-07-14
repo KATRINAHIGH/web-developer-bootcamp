@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Bootstrap Basics</title>
+        <link rel="stylesheet" href="bootstrap.css">
+    </head>
+    <body>
+        <h1>Bootstrap Basics</h1>
+        <h2>Types of buttons</h2>
+        <p>Add classes to the button element change style, size, state of a button. 
+            Can also make an a tag and input tag of value input or submit a button. 
+        </p>
+        <p>Changing state of a button. Buttons will appear pressed with a darker 
+            background, darker border and inset shadow when active. Use active attribute.
+        </p>
+        <p>Disable a button using disabled="disabled"</p>
+        <p>div with class jumbtron defaults to take up 100% of container it is in.
+            div with class container has some padding and margin and centers things.
+            When put jumbotron in container it centers it.
+        </p>
+        <button class="btn btn-success btn-lg">click me</button>
+        <button class="btn btn-primary btn-xs"  disabled="disabled">push me</button>
+        <button class="btn btn-primary btn-xs active">active button</button>
+        <a href="http://www.getbootstrap.com" class="btn btn-info btn-lg">Bootstrap Docs</a>
+        <div class="jumbotron">
+            <h1>this is a jumbotron</h1>
+            <p>this is a bootstrap project.</p>
+            <button class="btn btn-success btn-lg"></button>
+        </div>
+        <div class="container">
+            <div class="jumbotron">
+                <h1>this is a jumbotron inside a container div</h1>
+                <p>fjaoigjo opajoijoi kopasjidfhia odhiasiufh ddh kdhwo kdhwij kkk</p>
+                <button class="btn btn-success btn-lg"></button>
+            </div>
+        </div>
+        <p>form-group puts some spacing around elements to group them visually.<br>
+        form-control styles the input box also changes some behaviour.<br>
+        help-block text gives user hints about form
+        form-inline everything inside the form almost identical to form-group, 
+        form-inline changes the flow of elements entire form goes inline
+        </p>
+        <div class="container">
+            <form>
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Email address</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+                </div>
+                    <div class="form-group">
+                    <label for="exampleInputPassword1">Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputFile">File input</label>
+                    <input type="file" id="exampleInputFile">
+                    <p class="help-block">Example block-level help text here.</p>
+                </div>
+                <div class="checkbox">
+                    <label><input type="checkbox"> Check me out</label>
+                </div>
+                <button type="submit" class="btn btn-default">Submit</button>
+            </form>
+
+          <!--Inline Form-->
+            <form class="form-inline">
+                <div class="form-group">
+                    <label for="exampleInputName2">Name</label>
+                    <input type="text" class="form-control" id="exampleInputName2" placeholder="Jane Doe">
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputEmail2">Email</label>
+                    <input type="email" class="form-control" id="exampleInputEmail2" placeholder="jane.doe@example.com">
+                </div>
+                <button type="submit" class="btn btn-default">Send invitation</button>
+            </form>
+        </div>
+    </body>
+</html>
+
+<!--Two ways to add Bootstrap to file. First is to download it and add it locally. Second,
+is to use the cdn which is a link to hosted version. Either way both are added using link tag in html head-->

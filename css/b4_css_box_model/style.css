@@ -1,0 +1,9 @@
+
+
+p {
+    width: 50%;
+    height: 50%;
+    border: 2px solid blue;
+    padding-left: 40px;
+    margin: auto 0 auto 0; 
+}

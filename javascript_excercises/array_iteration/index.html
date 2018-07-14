@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Array Iteration</title>
+        <script src="script.js" ></script>
+    </head>
+    <body>
+       <h1>Array Iteration</h1>
+       <p>Looping through the array and doing something to each element</p>
+       <ul>
+           <li>Use a for loop to iterate over an array</li>
+                <ul>
+                    <li>To loop over an array using a for loop, we need to make use of the 
+                        arrays length property.
+                    </li>
+                    <li>var colors = ["blue", "green", "orange", "yellow"];<br>
+                        for(var i = 0; i < colors.length; i++;){console.log(colors[i]);}</li>
+                </ul>
+           <li>Use forEach to iterate over and array</li>
+                <ul> 
+                    <li>built in way to iterate over an array</li>
+                    <li>colors.forEach(some function);</li>
+                    <li>color argument in the anonymous function is just a placeholder call it 
+                    whatever you want. function applied to each element in the array</li>
+                    <li>colors.forEach(function(color){console.log(color)});</li>
+                </ul>
+           <li>Could use a while loop to iterate but more syntax</li>
+                <ul>
+                    <li>var count = 0; while(count < colors.length){console.log(colors[count]); count++;}</li>
+                </ul>
+
+       </ul> 
+    </body>
+</html>

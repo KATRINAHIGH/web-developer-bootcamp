@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>registration form practice</title>
+    </head>
+    <body>
+        <h1>Register</h1>
+        <form>
+            <label for="firstName">First Name:</label>
+            <input id="firstName" type="text" placeholder="John">
+            <lable for="lastName">Last Name:</lable>
+            <input id="lastName" type="text" placeholder="Smith"><br>
+            
+            <label for="gender">Male</label>
+            <input name="genderChoice" id="gender" type="radio" value="male">
+            <label for="gender">Female</label>
+            <input name="genderChoice" id="gender" type="radio" value="female">
+            <label for="gender">Other</label>
+            <input name="genderChoice" id="gender" type="radio" value="other"><br>
+
+            <label for="email">Email:</label>
+            <input id="email" type="email" placeholder="email" required>
+            <label for="password">Password:</label>
+            <input id="password" type="password" placeholder="password" pattern=".{5,10}" required title="Password must be between 5 and 10 characters"><br>
+
+            <label for="birthday">Birthday:</label>
+            <select name="birthday">
+                <option>Month</option>
+                <option value="Jan">Jan</option>
+                <option value="Feb">Feb</option>
+                <option value="March">March</option>
+            </select>
+            <select name="birthday">
+                    <option>Day</option>
+                    <option value="first">1</option>
+                    <option value="second">2</option>
+                    <option value="third">3</option>
+            </select>
+            <select name="birthday">
+                    <option>Year</option>
+                    <option value="2017">2017</option>
+                    <option value="2016">2016</option>
+                    <option value="2015">2015</option>
+            </select><br>
+            <label for="agree">I agree to the terms and conditions</label>
+            <input id="agree" type="checkbox" required><br>
+            <button>submit</button>
+        </form>
+    </body>
+</html>

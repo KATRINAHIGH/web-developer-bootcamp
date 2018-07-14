@@ -1,0 +1,38 @@
+.navbar {
+    background-color: #373737;
+}
+
+body {
+    background-color: #F4F4F4; 
+    padding-top: 70px;
+}
+
+.jumbotron {
+    background-color: #DCD0C0;
+    color: #C0B283;
+}
+
+h1 {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+}
+
+/*Cant use this to style anchor tags in navbar because not specific enough. Bootstrap
+crated a more specific selector so it takes precedence. Same happens for .navbar-brand
+a {
+    color: white;
+}*/
+/*Bootstrap has the same selectors styled. Ours will take precedence because our style 
+sheet comes last in the header.*/
+.navbar-inverse .navbar-nav>li>a {
+    color: #F4F4F4;
+}
+
+.navbar-inverse .navbar-brand {
+    color: #F4F4F4;
+    font-family: 'Oswald', sans-serif;
+}

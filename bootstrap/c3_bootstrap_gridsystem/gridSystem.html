@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Bootstrap Grid System</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <style type="text/css">
+    .pink{
+        background: pink;
+        border: 1px solid purple;
+    }
+        </style>
+    </head>
+    <body>
+<!--Understand purpose of grid system. understand 4 different sizes. write nested grids-->
+<!--divides screen into 12 columns, columns may span combination as long as sum 12-->
+<!--the grid system is responsive and the columns rearrange depending on the size of the screen.
+There are 4 sizes col-xs(<768px) col-sm(=> 768px wide) col-md(=>992px wide) col-lg(=>1200px)-->
+<!--Each div below will take up 3 units when screen is large or medium. When hits the 
+breakpoint for small each div will take up 6 units. When hits the breakpoint for small
+each div will take up 12 units-->
+<!--Do not have to set col-lg-3 because med is the same and it lg will default to med size-->
+<div class="container">
+    <div class="row">
+        <div class="col-md-3 col-sm-6 pink">Tour Date</div>
+        <div class="col-md-3 col-sm-6 pink">Tour Date</div>
+        <div class="col-md-3 col-sm-6 pink">Tour Date</div>
+        <div class="col-md-3 col-sm-6 pink">Tour Date</div>
+    </div>
+<!--Nesting Grids Add a row div inside a div class col-->
+    <div class="row">
+        <div class="col-md-3 col-sm-6 pink">
+            <div class="row">
+                <div class="col-lg-6" pink>Halfway</div>
+                <div class="col-lg-6" pink>Halfway</div>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-6 pink">Nested</div>
+        <div class="col-md-3 col-sm-6 pink">Nested</div>
+        <div class="col-md-3 col-sm-6 pink">Nested</div>
+    </div>
+</div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    </body>
+</html>
